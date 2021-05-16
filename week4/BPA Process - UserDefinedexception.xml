@@ -1,0 +1,221 @@
+﻿<process name="UserDefinedexception" version="1.0" bpversion="5.0.30.0" narrative="" preferredid="72249867-aa39-4c5a-a568-ccd5f2622bfd">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="4a1875a8-e12a-4c47-acba-be6584f87dda" type="Normal" published="False">
+    <name>Fact</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="f1d15ac7-382d-4128-8ae2-4dcf7563012c" name="Start" type="Start">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>293848ee-32ca-4cff-a21f-e8e46c63279f</onsuccess>
+  </stage>
+  <stage stageid="ad300c0a-8d82-4680-9007-f3707bdc3b93" name="End" type="End">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="3cfa4796-5000-43ab-ada2-df70b2e69eae" name="Stage1" type="ProcessInfo">
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="5886a39d-357f-43d8-bf42-8374b60c9cf3" name="Fact" type="SubSheetInfo">
+    <subsheetid>4a1875a8-e12a-4c47-acba-be6584f87dda</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="859e52d5-89ab-4332-9435-f86f1b92c692" name="Start" type="Start">
+    <subsheetid>4a1875a8-e12a-4c47-acba-be6584f87dda</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="Num" stage="Num" />
+    </inputs>
+    <onsuccess>9eede860-33b6-4d33-8dec-5a77486dd9b2</onsuccess>
+  </stage>
+  <stage stageid="6411e467-2369-4de8-b085-7f2c70d22e09" name="End" type="End">
+    <subsheetid>4a1875a8-e12a-4c47-acba-be6584f87dda</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="number" name="fact" stage="Fact" />
+    </outputs>
+  </stage>
+  <stage stageid="c8604e5d-d51b-4249-b4f6-4a778998bfc4" name="Num" type="Data">
+    <subsheetid>4a1875a8-e12a-4c47-acba-be6584f87dda</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-135</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e746bb03-3c5f-4e80-9234-7ea0a96ea96f" name="Decision1" type="Decision">
+    <subsheetid>4a1875a8-e12a-4c47-acba-be6584f87dda</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[Num]&gt;0" />
+    <ontrue>7d922997-327e-42bc-8f2e-d7f4dda5c7fe</ontrue>
+    <onfalse>6411e467-2369-4de8-b085-7f2c70d22e09</onfalse>
+  </stage>
+  <stage stageid="7d922997-327e-42bc-8f2e-d7f4dda5c7fe" name="Calc1" type="Calculation">
+    <subsheetid>4a1875a8-e12a-4c47-acba-be6584f87dda</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>329a6bf0-9b0b-42f8-b2d8-037f286f2c1d</onsuccess>
+    <calculation expression="[Fact]*[Num]" stage="Fact" />
+  </stage>
+  <stage stageid="82e7f8d3-5669-48b6-8e3b-7afed4d899c1" name="Fact" type="Data">
+    <subsheetid>4a1875a8-e12a-4c47-acba-be6584f87dda</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>1</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="329a6bf0-9b0b-42f8-b2d8-037f286f2c1d" name="Calc2" type="Calculation">
+    <subsheetid>4a1875a8-e12a-4c47-acba-be6584f87dda</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>e746bb03-3c5f-4e80-9234-7ea0a96ea96f</onsuccess>
+    <calculation expression="[Num]-1" stage="Num" />
+  </stage>
+  <stage stageid="293848ee-32ca-4cff-a21f-e8e46c63279f" name="Fact" type="SubSheet">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="Num" expr="-8" />
+    </inputs>
+    <outputs>
+      <output type="number" name="fact" stage="fact" />
+    </outputs>
+    <onsuccess>ad300c0a-8d82-4680-9007-f3707bdc3b93</onsuccess>
+    <processid>4a1875a8-e12a-4c47-acba-be6584f87dda</processid>
+  </stage>
+  <stage stageid="a2808f92-d0ef-4f40-b4fb-29fa326ac1e7" name="fact" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>-165</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="9eede860-33b6-4d33-8dec-5a77486dd9b2" name="Decision2" type="Decision">
+    <subsheetid>4a1875a8-e12a-4c47-acba-be6584f87dda</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>75</displayx>
+    <displayy>-75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[Num]&lt;0" />
+    <ontrue>4caf4cb0-5ce8-4c25-be49-6b09bd2477f7</ontrue>
+    <onfalse>e746bb03-3c5f-4e80-9234-7ea0a96ea96f</onfalse>
+  </stage>
+  <stage stageid="4caf4cb0-5ce8-4c25-be49-6b09bd2477f7" name="InvalidInput Exception" type="Exception">
+    <subsheetid>4a1875a8-e12a-4c47-acba-be6584f87dda</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>225</displayx>
+    <displayy>-75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <exception type="Invalid Input Exception" detail="&quot;I can not dfine Fact for -Ve Nums&quot;" />
+  </stage>
+  <stage stageid="a54effda-5c74-4f70-9421-4f4f29807c42" name="Recover1" type="Recover">
+    <narrative>
+    </narrative>
+    <displayx>150</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>4c076a47-9a64-4321-ba6b-df27423bb6e1</onsuccess>
+  </stage>
+  <stage stageid="4c076a47-9a64-4321-ba6b-df27423bb6e1" name="Resume1" type="Resume">
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>ad300c0a-8d82-4680-9007-f3707bdc3b93</onsuccess>
+  </stage>
+</process>

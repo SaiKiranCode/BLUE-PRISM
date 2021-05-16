@@ -1,0 +1,140 @@
+﻿<process name="ExploreSessionDataProcess" version="1.0" bpversion="5.0.30.0" narrative="gfh" preferredid="3d01f12d-2e0b-41e6-8742-67a17a5d19cd">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="1557ada6-de29-44e7-adf3-6e5c8883ea69" name="Start" type="Start">
+    <narrative>
+    </narrative>
+    <displayx>0</displayx>
+    <displayy>-165</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>b493136b-9c55-489c-ba73-e6e4bc34c8e0</onsuccess>
+  </stage>
+  <stage stageid="3199e7cc-7cc0-4260-898c-9078c6bb41e7" name="End" type="End">
+    <narrative>
+    </narrative>
+    <displayx>0</displayx>
+    <displayy>120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="4982bb5e-2984-402b-8f59-668dc519a111" name="Stage1" type="ProcessInfo">
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="c097ff16-105d-4357-a2e4-a2bfaa3fb33f" name="Process Status" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>-270</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">About To Start</initialvalue>
+    <exposure>Session</exposure>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="12c04a5a-dadb-4e4d-b421-fdb35f8f0d55" name="Calc1" type="Calculation">
+    <narrative>
+    </narrative>
+    <displayx>0</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>bb2fe079-7cc0-4f6d-bda1-85e561b7706e</onsuccess>
+    <calculation expression="&quot;Process Started&quot;" stage="Process Status" />
+  </stage>
+  <stage stageid="28f1a5e0-7d77-43d6-a1c3-03d5d609845c" name="Calc2" type="Calculation">
+    <narrative>
+    </narrative>
+    <displayx>0</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>f8bd240f-457c-41ad-8429-4b582a9f1358</onsuccess>
+    <calculation expression="&quot;About To Stop&quot;" stage="Process Status" />
+  </stage>
+  <stage stageid="c57c9d71-4835-4482-8e8a-cda0d983b7f0" name="Calc2" type="Calculation">
+    <narrative>
+    </narrative>
+    <displayx>0</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>5fd4cee1-2b94-4b20-85b5-f38efd78b52f</onsuccess>
+    <calculation expression="&quot;Process Stopped&quot;" stage="Process Status" />
+  </stage>
+  <stage stageid="b493136b-9c55-489c-ba73-e6e4bc34c8e0" name="Action1" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>-120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="Sleep Time (Seconds)" narrative="The time (in seconds) for which to sleep" expr="10" />
+    </inputs>
+    <onsuccess>12c04a5a-dadb-4e4d-b421-fdb35f8f0d55</onsuccess>
+    <resource object="Utility - General" action="Sleep" />
+  </stage>
+  <stage stageid="bb2fe079-7cc0-4f6d-bda1-85e561b7706e" name="Action1" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="Sleep Time (Seconds)" narrative="The time (in seconds) for which to sleep" expr="10" />
+    </inputs>
+    <onsuccess>28f1a5e0-7d77-43d6-a1c3-03d5d609845c</onsuccess>
+    <resource object="Utility - General" action="Sleep" />
+  </stage>
+  <stage stageid="f8bd240f-457c-41ad-8429-4b582a9f1358" name="Action1" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="Sleep Time (Seconds)" narrative="The time (in seconds) for which to sleep" expr="10" />
+    </inputs>
+    <onsuccess>c57c9d71-4835-4482-8e8a-cda0d983b7f0</onsuccess>
+    <resource object="Utility - General" action="Sleep" />
+  </stage>
+  <stage stageid="5fd4cee1-2b94-4b20-85b5-f38efd78b52f" name="Action1" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>105</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="number" name="Sleep Time (Seconds)" narrative="The time (in seconds) for which to sleep" expr="10" />
+    </inputs>
+    <onsuccess>3199e7cc-7cc0-4260-898c-9078c6bb41e7</onsuccess>
+    <resource object="Utility - General" action="Sleep" />
+  </stage>
+</process>

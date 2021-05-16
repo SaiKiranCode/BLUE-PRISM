@@ -1,0 +1,198 @@
+﻿<process name="WritingLogsProcess" version="1.0" bpversion="5.0.30.0" narrative="sg" preferredid="427f1721-488a-40d5-8880-cd2118e0f733">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="5599cfd2-505a-4a63-bd42-7f91c87734c0" name="Start" type="Start">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>edb10666-8a3a-4cf6-9093-1c5cbaa6f889</onsuccess>
+  </stage>
+  <stage stageid="0697a7a1-eacb-4680-8b1f-462e267d4dcf" name="End" type="End">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="fd91304e-1565-4c45-8a01-e009756c83b1" name="Stage1" type="ProcessInfo">
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="154c9702-6889-44cc-aa0b-afb44b261114" name="Num1" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>-225</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>78</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="d934940a-a110-42d2-bf32-7efd2c58a2c3" name="Num2" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>-135</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="cb8c87cd-f29b-4d8c-83d2-0a126919e327" name="Result" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="8306d187-42c3-4762-b9a4-e40442cbabba" name="Calc1" type="Calculation">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>fd1863eb-890d-4596-a6e9-69f6a2a9eae1</onsuccess>
+    <calculation expression="[Num1]+[Num2]" stage="Result" />
+  </stage>
+  <stage stageid="e0b06b47-2c03-4fc5-a2aa-29a08442a354" name="Alert1" type="Alert">
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>8306d187-42c3-4762-b9a4-e40442cbabba</onsuccess>
+    <alert expression="&quot;Before Calculating&quot;" />
+  </stage>
+  <stage stageid="fd1863eb-890d-4596-a6e9-69f6a2a9eae1" name="Alert2" type="Alert">
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>0697a7a1-eacb-4680-8b1f-462e267d4dcf</onsuccess>
+    <alert expression="&quot;After Calculating&quot;" />
+  </stage>
+  <stage stageid="127629db-903c-4001-adcb-181eae148e62" name="Recover1" type="Recover">
+    <narrative>
+    </narrative>
+    <displayx>255</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>70c90b0b-905a-4a71-af80-80b5f942a866</onsuccess>
+  </stage>
+  <stage stageid="bbc7b4fe-7b6b-443b-981e-a169455e91aa" name="Resume1" type="Resume">
+    <narrative>
+    </narrative>
+    <displayx>255</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>0697a7a1-eacb-4680-8b1f-462e267d4dcf</onsuccess>
+  </stage>
+  <stage stageid="70c90b0b-905a-4a71-af80-80b5f942a866" name="Alert3" type="Alert">
+    <narrative>
+    </narrative>
+    <displayx>315</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>bbc7b4fe-7b6b-443b-981e-a169455e91aa</onsuccess>
+    <alert expression="&quot;Boss There is an exception&quot;" />
+  </stage>
+  <stage stageid="6d4cde0e-0fb0-4ef5-8bc2-7be37bb21521" name="Process1" type="Process">
+    <narrative>
+    </narrative>
+    <displayx>-60</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>0697a7a1-eacb-4680-8b1f-462e267d4dcf</onsuccess>
+    <processid>5050b29d-1ddd-4d54-b0df-5985e5f9589d</processid>
+  </stage>
+  <stage stageid="edb10666-8a3a-4cf6-9093-1c5cbaa6f889" name="Action1" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>180</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Credentials Name" narrative="The name of the credentials to get" expr="&quot;MyCredentilas&quot;" />
+    </inputs>
+    <outputs>
+      <output type="password" name="Password" narrative="The password" stage="Password" />
+      <output type="text" name="Username" narrative="The user name" stage="Username" />
+      <output type="date" name="Expiry Date" narrative="The expiry date" stage="" />
+      <output type="text" name="Status" narrative="The status" stage="" />
+    </outputs>
+    <onsuccess>0697a7a1-eacb-4680-8b1f-462e267d4dcf</onsuccess>
+    <resource object="Blueprism.Automate.clsCredentialsActions" action="Get" />
+  </stage>
+  <stage stageid="95b6a48b-1eb2-4400-9a89-c510dddb034f" name="Password" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>255</displayx>
+    <displayy>-120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>password</datatype>
+    <initialvalueenc>
+    </initialvalueenc>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="d2dc4407-2dd3-4b46-b8aa-292c4e174c6f" name="Username" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>300</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+</process>

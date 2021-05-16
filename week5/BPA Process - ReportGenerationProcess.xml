@@ -1,0 +1,334 @@
+﻿<process name="ReportGenerationProcess" version="1.0" bpversion="5.0.30.0" narrative="fg" preferredid="f82761c5-cb88-4ffe-8286-b04793281b01">
+  <view>
+    <camerax>0</camerax>
+    <cameray>84</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="67e2cf8f-96bb-4e49-a750-a3b56e571421" name="Start" type="Start">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>b183f332-31fa-408a-92c6-2bdda2968532</onsuccess>
+  </stage>
+  <stage stageid="c8b9dfe5-9762-45d5-8997-8ae6901ffce9" name="End" type="End">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>225</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="a332e772-ba47-4ac8-b93d-f9a826ce044f" name="Stage1" type="ProcessInfo">
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="70be948f-8bf6-4c89-8849-e9d96d7081cb" name="EmpData" type="Collection">
+    <narrative>
+    </narrative>
+    <displayx>-270</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="EmpNo" type="text" namespace="" />
+      <field name="Name" type="text" namespace="" />
+      <field name="Salary" type="number" namespace="" />
+      <field name="HRA" type="number" namespace="" />
+      <field name="Gross" type="number" namespace="" />
+      <field name="Tax" type="number" namespace="" />
+      <field name="Total" type="number" namespace="" />
+    </collectioninfo>
+    <initialvalue>
+      <row>
+        <field name="EmpNo" type="text" value="E001" />
+        <field name="Name" type="text" value="Bhanu" />
+        <field name="Salary" type="number" value="98000" />
+        <field name="HRA" type="number" value="" />
+        <field name="Gross" type="number" value="" />
+        <field name="Tax" type="number" value="" />
+        <field name="Total" type="number" value="" />
+      </row>
+      <row>
+        <field name="EmpNo" type="text" value="E002" />
+        <field name="Name" type="text" value="Sai Kiran" />
+        <field name="Salary" type="number" value="99000" />
+        <field name="HRA" type="number" value="" />
+        <field name="Gross" type="number" value="" />
+        <field name="Tax" type="number" value="" />
+        <field name="Total" type="number" value="" />
+      </row>
+      <row>
+        <field name="EmpNo" type="text" value="E003" />
+        <field name="Name" type="text" value="Devi Priya" />
+        <field name="Salary" type="number" value="100000" />
+        <field name="HRA" type="number" value="" />
+        <field name="Gross" type="number" value="" />
+        <field name="Tax" type="number" value="" />
+        <field name="Total" type="number" value="" />
+      </row>
+    </initialvalue>
+  </stage>
+  <stage stageid="b183f332-31fa-408a-92c6-2bdda2968532" name="Create Instance" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="number" name="handle" stage="handle" />
+    </outputs>
+    <onsuccess>3b7e95cd-71d4-4001-a389-d781af0f20da</onsuccess>
+    <resource object="MS Word VBO" action="Create Instance" />
+  </stage>
+  <stage stageid="22b82cec-6c64-435b-a474-57afa217abc3" name="handle" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>-165</displayx>
+    <displayy>45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="3b7e95cd-71d4-4001-a389-d781af0f20da" name="Open Template" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>105</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="File Name" expr="&quot;C:\Users\Hello\Desktop\BP8AMData\UseCases\ReportGeneration\PaySlipTemplate.docx&quot;" />
+      <input type="number" name="handle" expr="[handle]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Document Name" stage="WDoc" />
+    </outputs>
+    <onsuccess>88a12d5b-e84f-487e-8e3a-667516bbdffc</onsuccess>
+    <resource object="MS Word VBO" action="Open" />
+  </stage>
+  <stage stageid="88a12d5b-e84f-487e-8e3a-667516bbdffc" name="Loop Start1" type="LoopStart">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>f3b5fc3a-b1f0-45ee-8d8a-199157a55ba3</onsuccess>
+    <groupid>5959c57f-5411-4c62-96c6-8c90e2a0c398</groupid>
+    <looptype>ForEach</looptype>
+    <loopdata>EmpData</loopdata>
+  </stage>
+  <stage stageid="efcca0da-e248-4c23-9bf2-9a3cbdc4e944" name="Loop End1" type="LoopEnd">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>165</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>c8b9dfe5-9762-45d5-8997-8ae6901ffce9</onsuccess>
+    <groupid>5959c57f-5411-4c62-96c6-8c90e2a0c398</groupid>
+  </stage>
+  <stage stageid="f3b5fc3a-b1f0-45ee-8d8a-199157a55ba3" name="Compute Salary" type="MultipleCalculation">
+    <narrative>
+    </narrative>
+    <displayx>105</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>6af6388f-c90b-4ac5-8914-117e49b6b4ea</onsuccess>
+    <steps>
+      <calculation expression="[EmpData.Salary]*0.1" stage="EmpData.HRA" />
+      <calculation expression="[EmpData.Salary]*0.05" stage="EmpData.Tax" />
+      <calculation expression="[EmpData.Salary]+[EmpData.HRA]" stage="EmpData.Gross" />
+      <calculation expression="[EmpData.Gross]-[EmpData.Tax]" stage="EmpData.Total" />
+    </steps>
+  </stage>
+  <stage stageid="6af6388f-c90b-4ac5-8914-117e49b6b4ea" name="Write EmpNo" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="documentname" expr="[WDoc]" />
+      <input type="number" name="handle" expr="[handle]" />
+      <input type="number" name="Table Number" narrative="The number of the table within the document" expr="1" />
+      <input type="number" name="Cell x Number" narrative="The x location number of the cell within the table (starts at 1)" expr="2" />
+      <input type="number" name="Cell y Number" narrative="The y location number of the cell within the table (starts at 1)" expr="1" />
+      <input type="text" name="Value" narrative="The value to set the cell to" expr="[EmpData.EmpNo]" />
+    </inputs>
+    <onsuccess>4e08625c-b2c8-413f-8f84-ae008758c681</onsuccess>
+    <resource object="MS Word VBO" action="Set Table Cell Value" />
+  </stage>
+  <stage stageid="89f9a3b7-5a12-4978-bb1f-36e945a8120b" name="WDoc" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>180</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="4e08625c-b2c8-413f-8f84-ae008758c681" name="Write EmpNo" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>195</displayx>
+    <displayy>45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="documentname" expr="[WDoc]" />
+      <input type="number" name="handle" expr="[handle]" />
+      <input type="number" name="Table Number" narrative="The number of the table within the document" expr="1" />
+      <input type="number" name="Cell x Number" narrative="The x location number of the cell within the table (starts at 1)" expr="2" />
+      <input type="number" name="Cell y Number" narrative="The y location number of the cell within the table (starts at 1)" expr="2" />
+      <input type="text" name="Value" narrative="The value to set the cell to" expr="[EmpData.Name]" />
+    </inputs>
+    <onsuccess>9fc37049-d5d5-4479-84f0-4e758f1417b5</onsuccess>
+    <resource object="MS Word VBO" action="Set Table Cell Value" />
+  </stage>
+  <stage stageid="9fc37049-d5d5-4479-84f0-4e758f1417b5" name="Write EmpNo" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>270</displayx>
+    <displayy>45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="documentname" expr="[WDoc]" />
+      <input type="number" name="handle" expr="[handle]" />
+      <input type="number" name="Table Number" narrative="The number of the table within the document" expr="1" />
+      <input type="number" name="Cell x Number" narrative="The x location number of the cell within the table (starts at 1)" expr="2" />
+      <input type="number" name="Cell y Number" narrative="The y location number of the cell within the table (starts at 1)" expr="3" />
+      <input type="text" name="Value" narrative="The value to set the cell to" expr="[EmpData.Salary]" />
+    </inputs>
+    <onsuccess>271ad12c-5266-4a10-bbfa-57c5511840f0</onsuccess>
+    <resource object="MS Word VBO" action="Set Table Cell Value" />
+  </stage>
+  <stage stageid="271ad12c-5266-4a10-bbfa-57c5511840f0" name="Write EmpNo" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>345</displayx>
+    <displayy>45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="documentname" expr="[WDoc]" />
+      <input type="number" name="handle" expr="[handle]" />
+      <input type="number" name="Table Number" narrative="The number of the table within the document" expr="1" />
+      <input type="number" name="Cell x Number" narrative="The x location number of the cell within the table (starts at 1)" expr="2" />
+      <input type="number" name="Cell y Number" narrative="The y location number of the cell within the table (starts at 1)" expr="4" />
+      <input type="text" name="Value" narrative="The value to set the cell to" expr="[EmpData.HRA]" />
+    </inputs>
+    <onsuccess>a1ce95f7-6d3c-4c8e-be1a-9fe58fb670e5</onsuccess>
+    <resource object="MS Word VBO" action="Set Table Cell Value" />
+  </stage>
+  <stage stageid="a1ce95f7-6d3c-4c8e-be1a-9fe58fb670e5" name="Write EmpNo" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="documentname" expr="[WDoc]" />
+      <input type="number" name="handle" expr="[handle]" />
+      <input type="number" name="Table Number" narrative="The number of the table within the document" expr="1" />
+      <input type="number" name="Cell x Number" narrative="The x location number of the cell within the table (starts at 1)" expr="2" />
+      <input type="number" name="Cell y Number" narrative="The y location number of the cell within the table (starts at 1)" expr="5" />
+      <input type="text" name="Value" narrative="The value to set the cell to" expr="[EmpData.Gross]" />
+    </inputs>
+    <onsuccess>b2d265be-91de-47d5-9a92-544ce9f84fee</onsuccess>
+    <resource object="MS Word VBO" action="Set Table Cell Value" />
+  </stage>
+  <stage stageid="b2d265be-91de-47d5-9a92-544ce9f84fee" name="Write EmpNo" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>195</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="documentname" expr="[WDoc]" />
+      <input type="number" name="handle" expr="[handle]" />
+      <input type="number" name="Table Number" narrative="The number of the table within the document" expr="1" />
+      <input type="number" name="Cell x Number" narrative="The x location number of the cell within the table (starts at 1)" expr="2" />
+      <input type="number" name="Cell y Number" narrative="The y location number of the cell within the table (starts at 1)" expr="6" />
+      <input type="text" name="Value" narrative="The value to set the cell to" expr="[EmpData.Tax]" />
+    </inputs>
+    <onsuccess>b4100af3-9b28-41af-96db-002823a6f58c</onsuccess>
+    <resource object="MS Word VBO" action="Set Table Cell Value" />
+  </stage>
+  <stage stageid="b4100af3-9b28-41af-96db-002823a6f58c" name="Write EmpNo" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>270</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="documentname" expr="[WDoc]" />
+      <input type="number" name="handle" expr="[handle]" />
+      <input type="number" name="Table Number" narrative="The number of the table within the document" expr="1" />
+      <input type="number" name="Cell x Number" narrative="The x location number of the cell within the table (starts at 1)" expr="2" />
+      <input type="number" name="Cell y Number" narrative="The y location number of the cell within the table (starts at 1)" expr="7" />
+      <input type="text" name="Value" narrative="The value to set the cell to" expr="[EmpData.Total]" />
+    </inputs>
+    <onsuccess>44322480-ae31-4de1-ac91-5223a293dc5f</onsuccess>
+    <resource object="MS Word VBO" action="Set Table Cell Value" />
+  </stage>
+  <stage stageid="44322480-ae31-4de1-ac91-5223a293dc5f" name="Save Report" type="Action">
+    <narrative>
+    </narrative>
+    <displayx>195</displayx>
+    <displayy>135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="documentname" expr="[WDoc]" />
+      <input type="number" name="handle" expr="[handle]" />
+      <input type="text" name="File Name" expr="&quot;C:\Users\Hello\Desktop\BP8AMData\UseCases\ReportGeneration\&quot;&amp;[EmpData.Name]&amp;&quot;_SalaryReport&quot;" />
+    </inputs>
+    <onsuccess>efcca0da-e248-4c23-9bf2-9a3cbdc4e944</onsuccess>
+    <resource object="MS Word VBO" action="ExportPDF" />
+  </stage>
+</process>

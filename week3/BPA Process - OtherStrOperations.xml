@@ -1,0 +1,119 @@
+﻿<process name="OtherStrOperations" version="1.0" bpversion="5.0.30.0" narrative="fd" preferredid="1602d769-bce4-481d-9a5f-dbda7172dedd">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="2e2714e1-3188-4354-94c8-59f1a0ffdbce" name="Start" type="Start">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>e1536e2a-b715-4446-b89d-f8dc5f610cdc</onsuccess>
+  </stage>
+  <stage stageid="0e530e10-0c92-47bd-830d-12deec0a0b72" name="End" type="End">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="4cc8d213-337d-4232-9f58-9e3ba3506566" name="Stage1" type="ProcessInfo">
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="fedad85e-605a-499a-805a-65304204bba1" name="Instr Search" type="Calculation">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>0e530e10-0c92-47bd-830d-12deec0a0b72</onsuccess>
+    <calculation expression="InStr(&quot;Blue Prism&quot;, &quot;prism&quot;)" stage="Pos" />
+  </stage>
+  <stage stageid="f5e1ddb5-5eda-4e20-bc78-40454fbf92dd" name="Pos" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>-180</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="69cb082f-9fa5-41cb-9c88-06b4f2ee5d36" name="Calc2" type="Calculation">
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>0e530e10-0c92-47bd-830d-12deec0a0b72</onsuccess>
+    <calculation expression="&quot;Blue&quot;&amp;NewLine()&amp;&quot;Prism&quot;" stage="MultiLine" />
+  </stage>
+  <stage stageid="74df58b5-308f-48fe-adb8-99d01268d896" name="MultiLine" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>-210</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e1536e2a-b715-4446-b89d-f8dc5f610cdc" name="Calc1" type="Calculation">
+    <narrative>
+    </narrative>
+    <displayx>210</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>0e530e10-0c92-47bd-830d-12deec0a0b72</onsuccess>
+    <calculation expression="Replace(&quot;Blue Prism&quot;, &quot;prism&quot;, &quot;Shark&quot;)" stage="RepStr" />
+  </stage>
+  <stage stageid="bb564c5d-fba2-490d-ad82-aa4a4c6c3390" name="RepStr" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>-135</displayx>
+    <displayy>45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="61628a27-6e9d-48d9-956f-b3df346544b8" name="Calc3" type="Calculation">
+    <narrative>
+    </narrative>
+    <displayx>285</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <calculation expression="" stage="" />
+  </stage>
+</process>

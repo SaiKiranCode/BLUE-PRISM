@@ -1,0 +1,1044 @@
+﻿<process name="NasdaqWebAppObject" version="1.0" bpversion="5.0.30.0" narrative="kgjk" type="object" runmode="Exclusive" preferredid="774c13ea-0538-4fad-bb8d-f88be7ef2058">
+  <appdef>
+    <element name="NasdaqWebAppObject">
+      <id>1eb0213a-e8b0-4034-b180-09b1a0eb3781</id>
+      <element name="StockSymbol">
+        <id>1093fd5c-2002-4f4d-9178-0d7596af516c</id>
+        <type>HTMLEdit</type>
+        <basetype>HTMLEdit</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="X">
+            <ProcessValue datatype="number" value="0" />
+          </attribute>
+          <attribute name="Y">
+            <ProcessValue datatype="number" value="16" />
+          </attribute>
+          <attribute name="Width">
+            <ProcessValue datatype="number" value="350" />
+          </attribute>
+          <attribute name="Height">
+            <ProcessValue datatype="number" value="30" />
+          </attribute>
+          <attribute name="Path" inuse="True">
+            <ProcessValue datatype="text" value="/HTML/BODY(1)/HEADER(1)/DIV(3)/DIV(1)/FORM(1)/DIV(1)/LABEL(1)/INPUT(1)" />
+          </attribute>
+          <attribute name="TagName" inuse="True">
+            <ProcessValue datatype="text" value="INPUT" />
+          </attribute>
+          <attribute name="ClassName" inuse="True">
+            <ProcessValue datatype="text" value="ajax-search acInput" />
+          </attribute>
+          <attribute name="ID" inuse="True">
+            <ProcessValue datatype="text" value="stock-search-text" />
+          </attribute>
+          <attribute name="Title">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="Link">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="InputType" inuse="True">
+            <ProcessValue datatype="text" value="text" />
+          </attribute>
+          <attribute name="InputIdentifier2" inuse="True">
+            <ProcessValue datatype="text" value="stock-search-text" />
+          </attribute>
+          <attribute name="AncestorCount">
+            <ProcessValue datatype="number" value="8" />
+          </attribute>
+          <attribute name="Value">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="Enabled" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Checked">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="pURL">
+            <ProcessValue datatype="text" value="https://www.nasdaq.com/" />
+          </attribute>
+          <attribute name="ScreenBounds">
+            <ProcessValue datatype="text" value="RECT:489,168,198,839" />
+          </attribute>
+          <attribute name="MatchIndex">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="MatchReverse">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+        </attributes>
+      </element>
+      <element name="Submit">
+        <id>604a1c10-408b-486d-b4bf-ccc980855262</id>
+        <type>HTML</type>
+        <basetype>HTML</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="X">
+            <ProcessValue datatype="number" value="336" />
+          </attribute>
+          <attribute name="Y">
+            <ProcessValue datatype="number" value="16" />
+          </attribute>
+          <attribute name="Width">
+            <ProcessValue datatype="number" value="36" />
+          </attribute>
+          <attribute name="Height">
+            <ProcessValue datatype="number" value="30" />
+          </attribute>
+          <attribute name="Path" inuse="True">
+            <ProcessValue datatype="text" value="/HTML/BODY(1)/HEADER(1)/DIV(3)/DIV(1)/FORM(1)/DIV(1)/LABEL(1)/BUTTON(1)" />
+          </attribute>
+          <attribute name="TagName" inuse="True">
+            <ProcessValue datatype="text" value="BUTTON" />
+          </attribute>
+          <attribute name="ClassName">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="ID" inuse="True">
+            <ProcessValue datatype="text" value="stock-search-submit" />
+          </attribute>
+          <attribute name="Title">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="Link">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="InputType">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="InputIdentifier2">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="AncestorCount">
+            <ProcessValue datatype="number" value="8" />
+          </attribute>
+          <attribute name="Value">
+            <ProcessValue datatype="text" value=" " />
+          </attribute>
+          <attribute name="Enabled" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Checked">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="pURL">
+            <ProcessValue datatype="text" value="https://www.nasdaq.com/" />
+          </attribute>
+          <attribute name="ScreenBounds">
+            <ProcessValue datatype="text" value="RECT:825,168,198,861" />
+          </attribute>
+          <attribute name="MatchIndex">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="MatchReverse">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+        </attributes>
+      </element>
+      <element name="Stock Price">
+        <id>435c974b-3865-4f1d-b922-58a8b7863658</id>
+        <type>HTML</type>
+        <basetype>HTML</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="X">
+            <ProcessValue datatype="number" value="178" />
+          </attribute>
+          <attribute name="Y">
+            <ProcessValue datatype="number" value="359" />
+          </attribute>
+          <attribute name="Width">
+            <ProcessValue datatype="number" value="108" />
+          </attribute>
+          <attribute name="Height">
+            <ProcessValue datatype="number" value="35" />
+          </attribute>
+          <attribute name="Path" inuse="True">
+            <ProcessValue datatype="text" value="/HTML/BODY(1)/DIV(1)/DIV(1)/DIV(2)/DIV(2)/DIV(1)/DIV(1)/DIV(1)/DIV(2)/DIV(3)/DIV(2)" />
+          </attribute>
+          <attribute name="TagName" inuse="True">
+            <ProcessValue datatype="text" value="DIV" />
+          </attribute>
+          <attribute name="ClassName" inuse="True">
+            <ProcessValue datatype="text" value="qwidget-dollar" />
+          </attribute>
+          <attribute name="ID" inuse="True">
+            <ProcessValue datatype="text" value="qwidget_lastsale" />
+          </attribute>
+          <attribute name="Title">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="Link">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="InputType">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="InputIdentifier2">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="AncestorCount">
+            <ProcessValue datatype="number" value="11" />
+          </attribute>
+          <attribute name="Value">
+            <ProcessValue datatype="text" value="$135.13" />
+          </attribute>
+          <attribute name="Enabled" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Checked">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="pURL">
+            <ProcessValue datatype="text" value="https://www.nasdaq.com/symbol/ibm/premarket" />
+          </attribute>
+          <attribute name="ScreenBounds">
+            <ProcessValue datatype="text" value="RECT:203,302,336,311" />
+          </attribute>
+          <attribute name="MatchIndex">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="MatchReverse">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+        </attributes>
+      </element>
+      <element name="ChangeInP">
+        <id>241bb764-a57e-4f11-b06d-4f683799b763</id>
+        <type>HTML</type>
+        <basetype>HTML</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="X">
+            <ProcessValue datatype="number" value="409" />
+          </attribute>
+          <attribute name="Y">
+            <ProcessValue datatype="number" value="359" />
+          </attribute>
+          <attribute name="Width">
+            <ProcessValue datatype="number" value="45" />
+          </attribute>
+          <attribute name="Height">
+            <ProcessValue datatype="number" value="35" />
+          </attribute>
+          <attribute name="Path" inuse="True">
+            <ProcessValue datatype="text" value="/HTML/BODY(1)/DIV(1)/DIV(1)/DIV(2)/DIV(2)/DIV(1)/DIV(1)/DIV(1)/DIV(2)/DIV(3)/DIV(6)" />
+          </attribute>
+          <attribute name="TagName" inuse="True">
+            <ProcessValue datatype="text" value="DIV" />
+          </attribute>
+          <attribute name="ClassName">
+            <ProcessValue datatype="text" value="qwidget-percent qwidget-Green" />
+          </attribute>
+          <attribute name="ID" inuse="True">
+            <ProcessValue datatype="text" value="qwidget_percent" />
+          </attribute>
+          <attribute name="Title">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="Link">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="InputType">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="InputIdentifier2">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="AncestorCount">
+            <ProcessValue datatype="number" value="11" />
+          </attribute>
+          <attribute name="Value">
+            <ProcessValue datatype="text" value="0.29%" />
+          </attribute>
+          <attribute name="Enabled" inuse="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="Checked">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="pURL">
+            <ProcessValue datatype="text" value="https://www.nasdaq.com/symbol/ibm/premarket" />
+          </attribute>
+          <attribute name="ScreenBounds">
+            <ProcessValue datatype="text" value="RECT:434,302,336,479" />
+          </attribute>
+          <attribute name="MatchIndex">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+          <attribute name="MatchReverse">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+        </attributes>
+      </element>
+      <type>Application</type>
+      <basetype>Application</basetype>
+      <datatype>unknown</datatype>
+      <diagnose>False</diagnose>
+    </element>
+    <apptypeinfo>
+      <id>HTMLLaunch</id>
+      <parameters>
+        <parameter>
+          <name>Path</name>
+          <value>C:\Program Files\Internet Explorer\iexplore.exe</value>
+        </parameter>
+        <parameter>
+          <name>CommandLineParams</name>
+          <value>https://www.nasdaq.com/</value>
+        </parameter>
+        <parameter>
+          <name>ActiveTabOnly</name>
+          <value>True</value>
+        </parameter>
+        <parameter>
+          <name>UseJavaInBrowser</name>
+          <value>False</value>
+        </parameter>
+        <parameter>
+          <name>ExcludeHTC</name>
+          <value>True</value>
+        </parameter>
+        <parameter>
+          <name>ProcessMode</name>
+          <value>Internal</value>
+        </parameter>
+        <parameter>
+          <name>ExternalProcessTimeout</name>
+          <value>0</value>
+        </parameter>
+      </parameters>
+    </apptypeinfo>
+  </appdef>
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="dfe0079d-4cdf-4a01-85cc-6d1fae82cb30" type="CleanUp" published="True">
+    <name>Clean Up</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="b36dc3c0-33a6-4623-b97e-a93bd578fdcb" type="Normal" published="True">
+    <name>LaunchNasdaq</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>-63</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="cd2a7a6d-720d-4725-86c5-9c5aa711af06" type="Normal" published="True">
+    <name>Set Stock Symbol</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="63910bb8-aebe-4155-9ced-47825b4c6e78" type="Normal" published="True">
+    <name>Submit</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="b9f5f2d5-bfb7-48cd-9c3e-e2b98a5c3e5e" type="Normal" published="True">
+    <name>Read Price</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="51462a39-3969-4857-95a9-aa253935bd19" type="Normal" published="True">
+    <name>Read Change In Percentage</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="68e6ce76-6a5c-4d86-ae60-8104daa0e007" type="Normal" published="True">
+    <name>VerifyStatus</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="05159082-edd6-44f3-b308-619c07c6dcfe" name="Start" type="Start">
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>aa1e8bf5-0e50-4b79-9da6-2d83c67fea92</onsuccess>
+  </stage>
+  <stage stageid="aa1e8bf5-0e50-4b79-9da6-2d83c67fea92" name="End" type="End">
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="22e65362-27a2-469c-9fd0-e36e750ffa03" name="Stage1" type="ProcessInfo">
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <references>
+      <reference>System.dll</reference>
+      <reference>System.Data.dll</reference>
+      <reference>System.Xml.dll</reference>
+      <reference>System.Drawing.dll</reference>
+    </references>
+    <imports>
+      <import>System</import>
+      <import>System.Drawing</import>
+      <import>System.Data</import>
+    </imports>
+    <language>visualbasic</language>
+    <globalcode><![CDATA[]]></globalcode>
+    <code><![CDATA[]]></code>
+  </stage>
+  <stage stageid="ba1adf7b-929a-42ed-ae9b-8d707059fba2" name="Clean Up" type="SubSheetInfo">
+    <subsheetid>dfe0079d-4cdf-4a01-85cc-6d1fae82cb30</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="23936161-37e5-4a01-8cf1-84a5351569f1" name="Start" type="Start">
+    <subsheetid>dfe0079d-4cdf-4a01-85cc-6d1fae82cb30</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>64dcb8e7-12cf-49a2-b92f-8ba0709d8e84</onsuccess>
+  </stage>
+  <stage stageid="64dcb8e7-12cf-49a2-b92f-8ba0709d8e84" name="End" type="End">
+    <subsheetid>dfe0079d-4cdf-4a01-85cc-6d1fae82cb30</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="7173909c-71d1-4537-bd6f-271cd104c49f" name="LaunchNasdaq" type="SubSheetInfo">
+    <subsheetid>b36dc3c0-33a6-4623-b97e-a93bd578fdcb</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="5fac0b2c-16ef-440c-8c5b-ac2ba861b739" name="Start" type="Start">
+    <subsheetid>b36dc3c0-33a6-4623-b97e-a93bd578fdcb</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>f7a3c793-4fae-437e-a236-bc586d5bd709</onsuccess>
+  </stage>
+  <stage stageid="6294c76b-4acd-44a7-b634-d1778c70b029" name="End" type="End">
+    <subsheetid>b36dc3c0-33a6-4623-b97e-a93bd578fdcb</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="faea5aaa-d518-4898-b1b8-56ccc80dbf76" name="Note1" type="Note">
+    <subsheetid>dfe0079d-4cdf-4a01-85cc-6d1fae82cb30</subsheetid>
+    <narrative>Clean Up Page
+
+This is an optional page where you might choose to perform some finalisation (or "cleanup") tasks as your business object is closed down.
+
+The cleanup action will be called automatically immediately after closing your business object at the end of a business process.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative>
+    <displayx>-180</displayx>
+    <displayy>60</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>230</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="d29647cf-f546-43f2-969d-a91722fbb324" name="Note2" type="Note">
+    <narrative>Initialise Page
+
+This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
+
+The initialise action will be called automatically immediately after loading your business object.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative>
+    <displayx>-180</displayx>
+    <displayy>60</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>230</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="f7a3c793-4fae-437e-a236-bc586d5bd709" name="Launch Nasdaq" type="Navigate">
+    <subsheetid>b36dc3c0-33a6-4623-b97e-a93bd578fdcb</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>35504227-d775-4903-aa0c-f9766b3f43c4</onsuccess>
+    <step>
+      <element id="1eb0213a-e8b0-4034-b180-09b1a0eb3781" />
+      <action>
+        <id>Launch</id>
+        <arguments>
+          <argument>
+            <id>Path</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>CommandLineParams</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>ActiveTabOnly</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>UseJavaInBrowser</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>ExcludeHTC</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>ProcessMode</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="31c05039-a8a2-4b29-9982-e5e057bfb3cd" name="Set Stock Symbol" type="SubSheetInfo">
+    <subsheetid>cd2a7a6d-720d-4725-86c5-9c5aa711af06</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="e87149ba-d68f-4a25-8566-7f39d22f2460" name="Start" type="Start">
+    <subsheetid>cd2a7a6d-720d-4725-86c5-9c5aa711af06</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Symbol" stage="SSymbol" />
+    </inputs>
+    <onsuccess>7a2625ee-1a46-4ece-9917-8d4e7311a3ec</onsuccess>
+  </stage>
+  <stage stageid="7f722985-b3ce-4597-963d-30be370c52cc" name="End" type="End">
+    <subsheetid>cd2a7a6d-720d-4725-86c5-9c5aa711af06</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="7a2625ee-1a46-4ece-9917-8d4e7311a3ec" name="Set Stock Symbol" type="Write">
+    <subsheetid>cd2a7a6d-720d-4725-86c5-9c5aa711af06</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>7f722985-b3ce-4597-963d-30be370c52cc</onsuccess>
+    <step expr="[SSymbol]">
+      <element id="1093fd5c-2002-4f4d-9178-0d7596af516c" />
+    </step>
+  </stage>
+  <stage stageid="03b993dd-4e72-4edb-b448-e502c0b2a6a9" name="Submit" type="SubSheetInfo">
+    <subsheetid>63910bb8-aebe-4155-9ced-47825b4c6e78</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="b638db92-a0a9-4a0d-b507-5eb205737f4e" name="Start" type="Start">
+    <subsheetid>63910bb8-aebe-4155-9ced-47825b4c6e78</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>97f19190-b592-465e-871a-61f69a5a10c6</onsuccess>
+  </stage>
+  <stage stageid="76246e96-8a04-44ab-8ac7-6c8237a3e3f6" name="End" type="End">
+    <subsheetid>63910bb8-aebe-4155-9ced-47825b4c6e78</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="97f19190-b592-465e-871a-61f69a5a10c6" name="Click Submit" type="Navigate">
+    <subsheetid>63910bb8-aebe-4155-9ced-47825b4c6e78</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>357a2ade-602e-460d-8de3-ab2125b5a691</onsuccess>
+    <step>
+      <element id="604a1c10-408b-486d-b4bf-ccc980855262" />
+      <action>
+        <id>HTMLClickCentre</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="62f76e0f-ea3c-4544-9e29-5c64285cfc35" name="Read Price" type="SubSheetInfo">
+    <subsheetid>b9f5f2d5-bfb7-48cd-9c3e-e2b98a5c3e5e</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="b033b855-7967-41f5-bab4-9b07773f0e0e" name="Start" type="Start">
+    <subsheetid>b9f5f2d5-bfb7-48cd-9c3e-e2b98a5c3e5e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>4c6db79f-f029-4273-91e2-49decba2ed89</onsuccess>
+  </stage>
+  <stage stageid="455f024d-e88b-48ed-8e43-8d2225dc80ba" name="End" type="End">
+    <subsheetid>b9f5f2d5-bfb7-48cd-9c3e-e2b98a5c3e5e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="text" name="SPrice" stage="Price" />
+    </outputs>
+  </stage>
+  <stage stageid="4c6db79f-f029-4273-91e2-49decba2ed89" name="Read Price" type="Read">
+    <subsheetid>b9f5f2d5-bfb7-48cd-9c3e-e2b98a5c3e5e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>455f024d-e88b-48ed-8e43-8d2225dc80ba</onsuccess>
+    <step stage="Price">
+      <element id="435c974b-3865-4f1d-b922-58a8b7863658" />
+      <action>
+        <id>ReadCurrentValue</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="92cb1705-de19-4019-b032-82c915d77e25" name="Price" type="Data">
+    <subsheetid>b9f5f2d5-bfb7-48cd-9c3e-e2b98a5c3e5e</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-135</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="81705f99-66df-4ca2-8ff6-3d3181cbccb6" name="Read Change In Percentage" type="SubSheetInfo">
+    <subsheetid>51462a39-3969-4857-95a9-aa253935bd19</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="1b3e9826-10ca-4cc9-b167-75e630db4843" name="Start" type="Start">
+    <subsheetid>51462a39-3969-4857-95a9-aa253935bd19</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>07143e8e-4afa-4764-983b-283c3fc2cf96</onsuccess>
+  </stage>
+  <stage stageid="740cc2e0-1dd7-4366-b231-077884ff1362" name="End" type="End">
+    <subsheetid>51462a39-3969-4857-95a9-aa253935bd19</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="text" name="CHangeP" stage="CP" />
+    </outputs>
+  </stage>
+  <stage stageid="07143e8e-4afa-4764-983b-283c3fc2cf96" name="Read CP" type="Read">
+    <subsheetid>51462a39-3969-4857-95a9-aa253935bd19</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>740cc2e0-1dd7-4366-b231-077884ff1362</onsuccess>
+    <step stage="CP">
+      <element id="241bb764-a57e-4f11-b06d-4f683799b763" />
+      <action>
+        <id>ReadCurrentValue</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="0be181a2-f380-4424-a96b-55dddefc7cee" name="CP" type="Data">
+    <subsheetid>51462a39-3969-4857-95a9-aa253935bd19</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-105</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="616eb581-4917-40a3-a5fb-f63cdb82f6bb" name="VerifyStatus" type="SubSheetInfo">
+    <subsheetid>68e6ce76-6a5c-4d86-ae60-8104daa0e007</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="295be74c-b3d6-4b4c-bf5c-333fa9c2738b" name="Start" type="Start">
+    <subsheetid>68e6ce76-6a5c-4d86-ae60-8104daa0e007</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>3795694f-6f9e-452f-836f-0b31c53876a2</onsuccess>
+  </stage>
+  <stage stageid="d0370951-651b-4fab-9b2f-7eeb88270882" name="End" type="End">
+    <subsheetid>68e6ce76-6a5c-4d86-ae60-8104daa0e007</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>225</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="text" name="Status" stage="Status" />
+    </outputs>
+  </stage>
+  <stage stageid="3795694f-6f9e-452f-836f-0b31c53876a2" name="Read Clue Value" type="Read">
+    <subsheetid>68e6ce76-6a5c-4d86-ae60-8104daa0e007</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>b4d7d3c7-455b-4c41-a3e4-973c5314e4ea</onsuccess>
+    <step stage="Clue">
+      <element id="241bb764-a57e-4f11-b06d-4f683799b763" />
+      <action>
+        <id>GetHTMLIdentifier</id>
+        <arguments>
+          <argument>
+            <id>idname</id>
+            <value>"Class Name"</value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="84a9a3d1-9d72-40e2-8379-9fdc53e73857" name="Clue" type="Data">
+    <subsheetid>68e6ce76-6a5c-4d86-ae60-8104daa0e007</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-255</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="b4d7d3c7-455b-4c41-a3e4-973c5314e4ea" name="Check Status" type="Decision">
+    <subsheetid>68e6ce76-6a5c-4d86-ae60-8104daa0e007</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="EndsWith([Clue], &quot;Green&quot;)" />
+    <ontrue>fddaebcd-1bcf-49d5-8a35-941ef69213ca</ontrue>
+    <onfalse>04688c96-1db4-4223-afb3-f0cc2dde6921</onfalse>
+  </stage>
+  <stage stageid="fddaebcd-1bcf-49d5-8a35-941ef69213ca" name="Set Status as Gain" type="Calculation">
+    <subsheetid>68e6ce76-6a5c-4d86-ae60-8104daa0e007</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>225</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>d0370951-651b-4fab-9b2f-7eeb88270882</onsuccess>
+    <calculation expression="&quot;Gain&quot;" stage="Status" />
+  </stage>
+  <stage stageid="602cef0a-04af-4339-80c8-3308732581e5" name="Status" type="Data">
+    <subsheetid>68e6ce76-6a5c-4d86-ae60-8104daa0e007</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-165</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="1653bfe6-bd3f-4545-b9b6-2b8493c1a3b9" name="Set Status as Loss" type="Calculation">
+    <subsheetid>68e6ce76-6a5c-4d86-ae60-8104daa0e007</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>d0370951-651b-4fab-9b2f-7eeb88270882</onsuccess>
+    <calculation expression="&quot;Loss&quot;" stage="Status" />
+  </stage>
+  <stage stageid="e035cfb5-084a-4834-a294-061bdcf51d99" name="SSymbol" type="Data">
+    <subsheetid>cd2a7a6d-720d-4725-86c5-9c5aa711af06</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-180</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">TCS</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="8cd1e8e4-d47f-4574-b429-b3f571f6a325" name="Time Out1" type="WaitEnd">
+    <subsheetid>b36dc3c0-33a6-4623-b97e-a93bd578fdcb</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>90</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>6294c76b-4acd-44a7-b634-d1778c70b029</onsuccess>
+    <groupid>c53f4230-0315-43db-80e6-d80aa0a5d1f6</groupid>
+  </stage>
+  <stage stageid="35504227-d775-4903-aa0c-f9766b3f43c4" name="Wait1" type="WaitStart">
+    <subsheetid>b36dc3c0-33a6-4623-b97e-a93bd578fdcb</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <groupid>c53f4230-0315-43db-80e6-d80aa0a5d1f6</groupid>
+    <choices>
+      <choice reply="True">
+        <name>StockSymbol Check Exists</name>
+        <distance>60</distance>
+        <ontrue>6294c76b-4acd-44a7-b634-d1778c70b029</ontrue>
+        <element id="1093fd5c-2002-4f4d-9178-0d7596af516c" />
+        <condition>
+          <id>CheckExists</id>
+        </condition>
+        <comparetype>Equal</comparetype>
+      </choice>
+    </choices>
+    <timeout>10</timeout>
+  </stage>
+  <stage stageid="9684bfe6-a884-475e-88b5-191055797002" name="Time Out2" type="WaitEnd">
+    <subsheetid>63910bb8-aebe-4155-9ced-47825b4c6e78</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>105</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>76246e96-8a04-44ab-8ac7-6c8237a3e3f6</onsuccess>
+    <groupid>09b09f47-40ac-4f63-be37-fd5dbede58bb</groupid>
+  </stage>
+  <stage stageid="357a2ade-602e-460d-8de3-ab2125b5a691" name="Wait2" type="WaitStart">
+    <subsheetid>63910bb8-aebe-4155-9ced-47825b4c6e78</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <groupid>09b09f47-40ac-4f63-be37-fd5dbede58bb</groupid>
+    <choices />
+    <timeout>5</timeout>
+  </stage>
+  <stage stageid="04688c96-1db4-4223-afb3-f0cc2dde6921" name="Check Status" type="Decision">
+    <subsheetid>68e6ce76-6a5c-4d86-ae60-8104daa0e007</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>30</displayx>
+    <displayy>45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="EndsWith([Clue], &quot;Red&quot;)" />
+    <ontrue>1653bfe6-bd3f-4545-b9b6-2b8493c1a3b9</ontrue>
+    <onfalse>b3d57b6f-6801-405e-849c-42bfb9b3a3d6</onfalse>
+  </stage>
+  <stage stageid="b3d57b6f-6801-405e-849c-42bfb9b3a3d6" name="Set Status as UD" type="Calculation">
+    <subsheetid>68e6ce76-6a5c-4d86-ae60-8104daa0e007</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>d0370951-651b-4fab-9b2f-7eeb88270882</onsuccess>
+    <calculation expression="&quot;Undefined&quot;" stage="Status" />
+  </stage>
+</process>
